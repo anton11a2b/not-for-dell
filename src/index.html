@@ -11,53 +11,57 @@
 </head>
 
 <body>
-  <aside id="mobileMenu" class="mobileMenu mobileMenu_hidden mobileMenu_shadow">
-    <header class="mobileMenu__header">
-      <div class="crossAndLogo">
-        <button id="crossBtn" class="circleBtn crossAndLogo__circleBtn">
-          <img src="./img/cross.svg" alt="">
-        </button>
-        <div class="crossAndLogo__logo">
+  <div class="container">
+    <aside id="mobileMenu" class="mobileMenu mobileMenu_hidden mobileMenu_shadow">
+      <header class="mobileMenu__header">
+        <div class="mobileMenu__crossAndLogo">
+          <button id="crossBtn" class="circleBtn circleBtn_hidden">
+            <img src="./img/cross.svg" alt="">
+          </button>
           <img src="./img/Logo.svg" alt="logo">
         </div>
-      </div>
-      <button class="circleBtn">
-        <img src="./img/search.svg" alt="">
-      </button>
-    </header>
-    <section>
-      <ul class="menu mobileMenu__menu">
-        <li><button class="menuBtn menu__menuBtn">Ремонт техники</button></li>
-        <li><button class="menuBtn menu__menuBtn">Услуги и сервисы</button></li>
-        <li><button class="menuBtn menu__menuBtn">Корпоративным клиентам</button></li>
-        <li><button class="menuBtn menu__menuBtn">Продавцам техники</button></li>
-        <li><button class="menuBtn menu__menuBtn">Партнерам</button></li>
-        <li><button class="menuBtn menu__menuBtn">Производителям</button></li>
-        <li><button class="menuBtn menu__menuBtn">Наши сервисные центры</button></li>
-        <li><button class="menuBtn menu__menuBtn">Контакты</button></li>
+        <button class="circleBtn">
+          <img src="./img/search.svg" alt="">
+        </button>
+      </header>
+      <ul class="mobileMenu__menu">
+        <li><img class="hidden" src="./img/highlightMini.svg" alt=""><button class="menuBtn"> Ремонт техники</button>
+        </li>
+        <li><img class="hidden" src="./img/highlightMini.svg" alt=""><button class="menuBtn"> Услуги и сервисы</button>
+        </li>
+        <li><img class="hidden" src="./img/highlightMini.svg" alt=""><button class="menuBtn"> Корпоративным
+            клиентам</button></li>
+        <li><img class="hidden" src="./img/highlightMini.svg" alt=""><button class="menuBtn"> Продавцам техники</button>
+        </li>
+        <li><img class="hidden" src="./img/highlightMini.svg" alt=""><button class="menuBtn"> Партнерам</button></li>
+        <li><img class="hidden" src="./img/highlightMini.svg" alt=""><button class="menuBtn"> Производителям</button>
+        </li>
+        <li><img class="hidden" src="./img/highlightMini.svg" alt=""><button class="menuBtn"> Наши сервисные
+            центры</button></li>
+        <li><img class="hidden" src="./img/highlightMini.svg" alt=""><button class="menuBtn"> Контакты</button></li>
       </ul>
-    </section>
-    <footer class="mobileMenu__footer" lang="en">
-      <div class="support support_width">
-        <button class="circleBtn">
-          <img src="./img/call.svg" alt="">
-        </button>
-        <button class="circleBtn">
-          <img src="./img/chat.svg" alt="">
-        </button>
-        <button class="circleBtn">
-          <img src="./img/profile.svg" alt="">
-        </button>
-      </div>
-      <p class="mobileMenu__email">mail@cps.com</p>
-      <p class="mobileMenu__numphone">8 800 890 8900</p>
-      <ul class="languages">
-        <li><button class="languages__btnLang">RU</button></li>
-        <li><button class="languages__btnLang">EN</button></li>
-        <li><button class="languages__btnLang">CH</button></li>
-      </ul>
-    </footer>
-  </aside>
+      <footer class="mobileMenu__footer" lang="en">
+        <div class="support">
+          <button class="circleBtn">
+            <img src="./img/call.svg" alt="">
+          </button>
+          <button class="circleBtn">
+            <img src="./img/chat.svg" alt="">
+          </button>
+          <button class="circleBtn">
+            <img src="./img/profile.svg" alt="">
+          </button>
+        </div>
+        <p class="mobileMenu__email">mail@cps.com</p>
+        <p class="mobileMenu__numphone">8 800 890 8900</p>
+        <ul class="mobileMenu__languages">
+          <li><button class="btnLang">RU</button></li>
+          <li><button class="btnLang">EN</button></li>
+          <li><button class="btnLang">CH</button></li>
+        </ul>
+      </footer>
+    </aside>
+  </div>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>

@@ -1,0 +1,56 @@
+.circleBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: $btn-bg-color;
+
+	&_hidden {
+		@media (min-width: 1366px) {
+		  display: none;
+		}
+	}
+}
+
+.menuBtn {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 1.14rem;
+  color: $menuBtn-color;
+  letter-spacing: -0.2px;
+  transition-duration: 0.4s;
+  transition-property: filter color;
+  background-color: $mobileMenu-bg-color;
+
+  &:hover {
+		filter: sepia(0.8) opacity(0.6);
+  }
+
+	&:active,
+	&:focus {
+		color: $menuBtn-focus-color;
+	}
+}
+
+.btnLang {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  user-select: none;
+  line-height: 24px;
+  margin-right: 7px;
+  font-size: 1.14rem;
+  color: $menuBtn-color;
+  letter-spacing: -0.2px;
+	transition-duration: 0.4s;
+	transition-property: color;
+  background-color: $mobileMenu-bg-color;
+
+  &:active,
+  &:focus {
+    color: $menuBtn-focus-color;
+  }
+}
