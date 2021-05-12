@@ -1,0 +1,134 @@
+.price-swiper {
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1366px) {
+    margin-bottom: 10px;
+  }
+}
+
+.price-wrapper {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 42px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+	&__title-price-slide {
+		display: none;
+
+		@media (min-width: 768px) {
+			opacity: 0.72;
+			display: flex;
+			padding: 16px;
+			letter-spacing: normal;
+			color: $menuBtn-focus-color;
+			background-color: $main-bg-color;
+		}
+	}
+
+  &__price-slide {
+    width: 260px;
+    display: flex;
+    height: 200px;
+    padding: 16px;
+    border-radius: 6px;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: $mobileMenu-bg-color;
+
+    @media (min-width: 768px) {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      align-items: center;
+      flex-direction: row;
+      border-bottom: 1px solid $separator-bg-color;
+    }
+
+    h3 {
+      opacity: 0.72;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 16px;
+      margin-bottom: 4px;
+      color: $menuBtn-focus-color;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+    }
+
+    &:last-child {
+      @media (min-width: 768px) {
+        border: none;
+      }
+    }
+  }
+
+  &__repair-services {
+    @media (min-width: 768px) {
+      flex-basis: 55%;
+    }
+
+    @media (min-width: 900px) {
+			flex-basis: 60%;
+		}
+
+    @media (min-width: 1120px) {
+			flex-basis: 55%;
+		}
+
+    @media (min-width: 1500px) {
+			flex-basis: 65%;
+		}
+  }
+
+  &__repair-price {
+    @media (min-width: 768px) {
+      flex-basis: 15%;
+    }
+
+		@media (min-width: 1120px) {
+		  flex-basis: 20%;
+		}
+
+		@media (min-width: 1366px) {
+		  flex-basis: 15%;
+		}
+  }
+
+  &__repair-time {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+      flex-basis: 30%;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      flex-basis: 25%;
+    }
+
+    @media (min-width: 1700px) {
+      flex-basis: 20%;
+    }
+  }
+}
