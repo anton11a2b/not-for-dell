@@ -55,3 +55,13 @@ a:focus {
 	text-decoration: none;
 	color: $menuBtn-color;
 }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $input-color;
+}
+
+input::-moz-input-placeholder,
+textarea::-moz-input-placeholder {
+  color: $input-color;
+}
