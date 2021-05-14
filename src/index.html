@@ -61,6 +61,20 @@
         </ul>
       </footer>
     </aside>
+    <section class="phone phone_hidden">
+      <button type="button" id="phone-close" class="circleBtn phone__close">
+        <img src="./img/cross.svg" alt="">
+      </button>
+      <h2 class="phone__title">Заказать звонок</h2>
+      <form>
+        <input class="phone__tel" type="tel" name="userNumberPhone" placeholder="Телефон">
+        <p class="phone__info">Нажимая «отправить», вы даете согласие на <strong>обработку персональных данных</strong> и
+          соглашаетесь с нашей <strong>политикой конфиденциальности</strong></p>
+        <div class="phone__submit">
+          <button type="submit" class="phone-button">Отправить</button>
+        </div>
+      </form>
+    </section>
     <section>
       <header class="header header_hidden">
         <div class="header__menuNavigation">
@@ -209,9 +223,15 @@
           <div class="price-container swiper-container">
             <div class="price-wrapper swiper-wrapper">
               <div class="price-wrapper__title-price-slide swiper-slide">
-                <p class="price-wrapper__repair-services">Ремонтные услуги</p>
-                <p class="price-wrapper__repair-price">Цена</p>
-                <p class="price-wrapper__repair-time">Срок</p>
+                <div class="price-wrapper__repair-services">
+                  <p>Ремонтные услуги</p>
+                </div>
+                <div class="price-wrapper__repair-price">
+                  <p>Цена</p>
+                </div>
+                <div class="price-wrapper__repair-time">
+                  <p>Срок</p>
+                </div>
               </div>
               <div class="price-wrapper__price-slide swiper-slide">
                 <div class="price-wrapper__repair-services">

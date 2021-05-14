@@ -18,21 +18,20 @@
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
   }
 
-	&__title-price-slide {
-		display: none;
+  &__title-price-slide {
+    display: none;
 
-		@media (min-width: 768px) {
-			opacity: 0.72;
-			display: flex;
-			padding: 16px;
-			letter-spacing: normal;
-			color: $menuBtn-focus-color;
-			background-color: $main-bg-color;
-		}
-	}
+    @media (min-width: 768px) {
+      opacity: 0.72;
+      display: flex;
+      padding: 16px;
+      letter-spacing: normal;
+      color: $menuBtn-focus-color;
+      background-color: transparent;
+    }
+  }
 
   &__price-slide {
     width: 260px;
@@ -41,17 +40,29 @@
     padding: 16px;
     border-radius: 6px;
     flex-direction: column;
-    box-sizing: border-box;
     justify-content: space-between;
     background-color: $mobileMenu-bg-color;
 
     @media (min-width: 768px) {
-      width: 100%;
+      width: 720px;
       height: auto;
       border-radius: 0;
       align-items: center;
       flex-direction: row;
+      justify-content: flex-start;
       border-bottom: 1px solid $separator-bg-color;
+    }
+
+    @media (min-width: 1120px) {
+      width: 1072px;
+    }
+
+    @media (min-width: 1366px) {
+      width: 940px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 1030px;
     }
 
     h3 {
@@ -83,34 +94,38 @@
 
   &__repair-services {
     @media (min-width: 768px) {
-      flex-basis: 55%;
+      width: 372px;
     }
 
-    @media (min-width: 900px) {
-			flex-basis: 60%;
-		}
-
     @media (min-width: 1120px) {
-			flex-basis: 55%;
-		}
+      width: 720px;
+    }
 
-    @media (min-width: 1500px) {
-			flex-basis: 65%;
-		}
+    @media (min-width: 1366px) {
+			width: 600px;
+    }
+
+    @media (min-width: 1440px) {
+			width: 500px;
+    }
   }
 
   &__repair-price {
     @media (min-width: 768px) {
-      flex-basis: 15%;
+      width: 96px;
     }
 
-		@media (min-width: 1120px) {
-		  flex-basis: 20%;
-		}
+    @media (min-width: 1120px) {
+      width: 132px;
+    }
 
-		@media (min-width: 1366px) {
-		  flex-basis: 15%;
-		}
+    @media (min-width: 1366px) {
+			width: 120px;
+    }
+
+    @media (min-width: 1440px) {
+			width: 230px;
+    }
   }
 
   &__repair-time {
@@ -119,16 +134,12 @@
     justify-content: space-between;
 
     @media (min-width: 768px) {
-      flex-basis: 30%;
+      width: 220px;
       align-items: center;
     }
 
-    @media (min-width: 900px) {
-      flex-basis: 25%;
-    }
-
-    @media (min-width: 1700px) {
-      flex-basis: 20%;
+    @media (min-width: 1440px) {
+      width: 300px;
     }
   }
 }

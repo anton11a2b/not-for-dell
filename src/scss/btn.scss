@@ -165,3 +165,28 @@
 		background-position: 95% 50%;
   }
 }
+
+.phone-button {
+	width: 136px;
+	height: 32px;
+	text-align: left;
+	font-weight: 700;
+	line-height: 24px;
+	padding: 4px 15px;
+	font-size: 0.86rem;
+	border-radius: 16px;
+	letter-spacing: -0.15px;
+	transition-duration: 0.3s;
+	color: $mobileMenu-bg-color;
+	transition-property: background-position;
+	background: $btn-bg-color url(../img/arrow.svg) no-repeat;
+	background-position: 80% 50%;
+
+	&:focus {
+	  background-position: 65% 50%;
+	}
+
+	&:active {
+	  background-position: 95% 50%;
+	}
+}
