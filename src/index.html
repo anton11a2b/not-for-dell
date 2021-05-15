@@ -12,7 +12,9 @@
 
 <body>
   <div class="container">
+    <div class="blur"></div>
     <aside id="mobileMenu" class="mobileMenu mobileMenu_hidden mobileMenu_shadow">
+      <div class="menu-blur"></div>
       <header class="mobileMenu__header">
         <div class="mobileMenu__crossAndLogo">
           <button id="crossBtn" class="circleBtn circleBtn_hidden">
@@ -42,10 +44,10 @@
       </ul>
       <footer class="mobileMenu__footer" lang="en">
         <div class="support">
-          <button class="circleBtn">
+          <button class="circleBtn call-open">
             <img src="./img/call.svg" alt="">
           </button>
-          <button class="circleBtn">
+          <button class="circleBtn phone-open">
             <img src="./img/chat.svg" alt="">
           </button>
           <button class="circleBtn">
@@ -61,21 +63,22 @@
         </ul>
       </footer>
     </aside>
-    <section class="phone phone_hidden">
+    <section id="phone" class="phone phone_hidden">
       <button type="button" id="phone-close" class="circleBtn phone__close">
         <img src="./img/cross.svg" alt="">
       </button>
       <h2 class="phone__title">Заказать звонок</h2>
       <form>
         <input class="phone__tel" type="tel" name="userNumberPhone" placeholder="Телефон">
-        <p class="phone__info">Нажимая «отправить», вы даете согласие на <strong>обработку персональных данных</strong> и
+        <p class="phone__info">Нажимая «отправить», вы даете согласие на <strong>обработку персональных данных</strong>
+          и
           соглашаетесь с нашей <strong>политикой конфиденциальности</strong></p>
         <div class="phone__submit">
           <button type="submit" class="button-form">Отправить</button>
         </div>
       </form>
     </section>
-    <section class="call call_hidden">
+    <section id="call" class="call call_hidden">
       <button type="button" id="call-close" class="circleBtn call__close">
         <img src="./img/cross.svg" alt="">
       </button>
@@ -84,7 +87,7 @@
         <input class="call__input" type="text" name="userName" placeholder="Имя">
         <input class="call__input" type="tel" name="userNumberPhone" placeholder="Телефон">
         <input class="call__input" type="email" name="userEmail" placeholder="Электронная почта">
-				<textarea class="call__input" name="userMessage" placeholder="Сообщение" rows="4"></textarea>
+        <textarea class="call__input" name="userMessage" placeholder="Сообщение" rows="4"></textarea>
         <p class="call__info">Нажимая «отправить», вы даете согласие на <strong>обработку персональных данных</strong> и
           соглашаетесь с нашей <strong>политикой конфиденциальности</strong></p>
         <div class="call__submit">
@@ -103,10 +106,10 @@
         </div>
         <div class="header__supportMenu">
           <div class="support support_hidden">
-            <button class="circleBtn">
+            <button class="circleBtn call-open">
               <img src="./img/call.svg" alt="">
             </button>
-            <button class="circleBtn">
+            <button class="circleBtn phone-open">
               <img src="./img/chat.svg" alt="">
             </button>
             <button class="circleBtn">

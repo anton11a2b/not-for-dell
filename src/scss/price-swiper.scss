@@ -98,33 +98,33 @@
     }
 
     @media (min-width: 1120px) {
-      width: 720px;
+      width: 570px;
     }
 
     @media (min-width: 1366px) {
-			width: 600px;
+      width: 450px;
     }
 
     @media (min-width: 1440px) {
-			width: 500px;
+      width: 500px;
     }
   }
 
   &__repair-price {
     @media (min-width: 768px) {
-      width: 96px;
+      width: 110px;
     }
 
     @media (min-width: 1120px) {
-      width: 132px;
+      width: 220px;
     }
 
     @media (min-width: 1366px) {
-			width: 120px;
+      width: 200px;
     }
 
     @media (min-width: 1440px) {
-			width: 230px;
+      width: 230px;
     }
   }
 
@@ -136,6 +136,10 @@
     @media (min-width: 768px) {
       width: 220px;
       align-items: center;
+    }
+
+    @media (min-width: 1120px) {
+      width: 300px;
     }
 
     @media (min-width: 1440px) {

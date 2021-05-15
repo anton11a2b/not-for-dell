@@ -1,6 +1,8 @@
 let mainInfoReadMore = document.querySelector(".mainInfo__readMore");
 let brandsSwiperReadMore = document.querySelector(".brands-swiper__readMore");
 let acceptProductsSwiperReadMore = document.querySelector(".accept-products-swiper__readMore");
+let menuBtns = document.querySelectorAll(".menuBtn");
+let images = document.querySelectorAll(".hidden");
 
 mainInfoReadMore.onclick = function () {
   let visibileText = document.getElementById("visibilText");
@@ -41,15 +43,15 @@ acceptProductsSwiperReadMore.onclick = function () {
   }
 }
 
-let burgerBtn = document.getElementById("burgerBtn");
-let crossBtn = document.getElementById("crossBtn");
+for (let i = 0; i < menuBtns.length; i++) {
+  let menuBtn = menuBtns[i];
+  let image = images[i];
 
-burgerBtn.onclick = function () {
-  let mobileMenu = document.getElementById("mobileMenu");
-  mobileMenu.classList.remove("mobileMenu_hidden");
-}
+  menuBtn.addEventListener("focus", () => {
+    image.classList.remove("hidden");
+  })
 
-crossBtn.onclick = function () {
-  let mobileMenu = document.getElementById("mobileMenu");
-  mobileMenu.classList.add("mobileMenu_hidden");
+  menuBtn.addEventListener("blur", () => {
+    image.classList.add("hidden");
+  })
 }

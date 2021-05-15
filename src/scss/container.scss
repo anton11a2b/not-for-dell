@@ -6,3 +6,10 @@
     display: flex;
   }
 }
+
+.blur {
+  width: 100%;
+  z-index: -10;
+  height: 1900px;
+  position: absolute;
+}
