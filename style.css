@@ -28,11 +28,17 @@
     align-items: center;
     justify-content: space-between; }
   .mobileMenu__menu {
-    height: 715px;
+    height: 1625px;
     display: flex;
     padding-top: 6px;
     flex-direction: column;
     justify-content: flex-start; }
+    @media (min-width: 768px) {
+      .mobileMenu__menu {
+        height: 1620px; } }
+    @media (min-width: 1366px) {
+      .mobileMenu__menu {
+        height: 1610px; } }
     .mobileMenu__menu li {
       display: flex;
       align-items: center;
