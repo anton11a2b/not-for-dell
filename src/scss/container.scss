@@ -1,5 +1,6 @@
 .container {
   display: block;
+	position: relative;
   font-family: $main-fonts;
 
   @media (min-width: 1366px) {
