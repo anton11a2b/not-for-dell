@@ -116,8 +116,9 @@
 }
 
 .menu-blur {
+	top: 0;
+	bottom: 0;
   width: 320px;
   z-index: -10;
-  height: 1900px;
   position: absolute;
 }
